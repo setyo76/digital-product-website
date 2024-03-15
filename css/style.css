@@ -1,0 +1,424 @@
+* {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC;
+    font-family: Helvetica;
+}
+
+header {
+    background-color: #004225;
+    width: 95%;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #FFB000;
+    border-radius: 40px 0;
+    & .logo {
+        padding-left: 30px;
+        & a {
+            height: 70px;
+            & img {
+                height: 60px;
+            }
+        }
+        & a img:hover {
+            transform: scale(.9);
+            transition: all ease .4s;
+        }
+    }
+    & .mbl-logo {
+        display: none;
+    }
+    & nav {
+        padding-right: 20px;
+        margin: auto 0;
+        & ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            & li {
+                list-style: none;
+                & a {
+                    text-decoration: none;
+                    color: #F5F5DC;
+                    padding: 0 40px;
+                }
+                & a:hover {
+                    background-color: #FFB000;
+                    border-left: 5px solid #F5F5DC;
+                    color: #004225;
+                    transition: all ease .4s;
+                    border-radius:20px 0 ;
+                }
+            }
+        }
+    }
+}
+main {
+    width: 95%;
+    margin: 0 auto;
+    & .hero {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 60px auto;
+        & .image-hero {
+            width: 450px;
+            & a {
+                border-radius: 30px 0;
+                width: 450px;
+                & img {
+                    width: 450px;
+                }
+                & img:hover {
+                    transform: scale(.9);
+                    transition: all ease .4s;
+                }  
+            }
+        }
+        & .text-hero {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            & h1 {
+                padding: 20px 0;
+                color: #004225;
+            }
+            & p {
+                color: grey;
+            }
+            & span img {
+                height: 42px;
+                margin-bottom: -8px;
+            }
+            & .write-efect {
+                color: #FFB000;
+                font-size: larger;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 4px #FFB000;
+            }
+            & .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            & a {
+                margin: 30px;
+                text-decoration: none;
+                color: #FFB000;
+                background-color: #004225;
+                padding: 15px 35px;
+                border-radius: 20px 0;
+                border-bottom: 4px solid #FFB000;
+            }
+            & a:hover {
+                background-color: #FFB000;
+                color: #004225;
+                border-top: 4px solid #004225;
+                transition: all ease .4s;
+            }
+        }
+    }
+    & #about {
+        width: 95%;
+        margin: 0 auto;
+    }
+    & article {
+        background-color: #F5F5DC;
+    }
+    & h2 {
+        margin: 20px auto;
+        width: 10%;
+        color: #004225;
+        text-shadow:1px 2px #FFB000;
+        padding: 15px 45px;
+        border-bottom:2px double #FFB000;
+        border-top: 2px double #FFB000;
+        border-radius: 25px 0;
+    }
+    & h3 {
+        color: #004225;
+        margin-top: 40px;
+    }
+    .goal-aside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & .goal {
+            width: 70%;
+            & p {
+                padding-left: 30px;
+            }
+        }
+        & aside {
+            border: 1px solid #FFCF9D;
+            width: 30%;
+            padding: 15px;
+            font-style: italic;
+            background: 
+                -webkit-linear-gradient(rgba(6, 99, 6, 0.4), rgba(45, 184, 14, 0) 80%),
+                -webkit-linear-gradient(-45deg, rgba(235, 217, 62, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+            border-radius: 20px 0 20px 0;
+            & img {
+                width: 100%;
+                border-radius: 20px 0 20px 0;
+            }
+        }
+    }
+    & #product {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    & .cards-product {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+        margin-top: 40px;
+        & .card {
+            background-color: #FFCF9D;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 350px;
+            border: 1px solid #FFCF9D;
+            border-radius: 30px 0;
+            & h4 {
+                color: rgb(67, 65, 65);
+                padding: 10px 20px;
+                background-color: #FFB000;
+                border-radius: 15px 0;
+            }
+            & img {
+                height: 200px;
+            }
+            & img:hover {
+                transform: scale(1.1);
+                transition: ease-in-out .4s;
+            }
+            & a {
+                display: flex;
+                align-items: center;
+            }
+            & span img {
+                height: 16px;
+                padding: 10px;
+            }
+            & span img:hover {
+                background-color: #004225;
+                transition: all ease .4s;
+                border-radius: 50%;
+            }
+            & a {
+                margin: 30px;
+                text-decoration: none;
+                color: #FFB000;
+                background-color: #004225;
+                padding: 10px 35px;
+                border-radius: 20px 0;
+                border-bottom: 4px solid #FFB000;
+            }
+            & a:hover {
+                background-color: #FFB000;
+                color: #004225;
+                border-top: 4px solid #004225;
+                transition: all ease .4s;
+            }
+        }
+    }
+    #contact {
+        margin: 60px auto;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #004225;
+        color: #F5F5DC;
+        border-radius: 40px 0 0 0;
+        border-top: 4px solid #FFB000;
+        & .title-contact {
+            width: 40%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 4px solid #FFB000;
+            & h2 {
+                width: 100px;
+                color: #004225;
+                padding: 12px 45px;
+                background-color: #F5F5DC;
+            }
+            & a {
+                text-decoration: none;
+                color: #F5F5DC;
+                font-style: italic;
+                font-size: small;
+                & img {
+                    width: 120px;
+                    border-radius: 50%;
+                    border:4px double #FFB000;
+                    box-shadow: -1px 1px 4px #F5F5DC;
+                }
+            }
+        }
+        & h2 {
+            color: #F5F5DC;
+            padding-top: 40px;
+        }
+        & .data-contact {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & .address {
+                flex-direction: column;
+                align-items: center;
+                & .text-address h3 {
+                    color: #FFB000;
+                    padding-right: 40px;
+                }
+                & .sosmed-icon a {
+                    padding: 0 20px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.mbl-nav {
+    display: none;
+}
+
+footer {
+    width: 95%;
+    padding: 15px 0;
+    margin: -70px auto 0 auto;
+    background-color: #FFB000;
+    color: #004225;
+    text-align: center;
+    border-radius: 0 0 40px 0;
+    & a {
+        text-decoration: none;
+        color: #004225;
+    }
+}
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #004225;
+    border: 2px solid #FFB000;
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+    & img {
+        width: 80%;
+        color: #FFB000;
+    }
+  }
+  
+  #back-to-top:hover {
+    background-color: #5D9C59;
+  }
+
+
+
+
+@media screen and (max-width:675px) {
+    header {
+        background-color: #F5F5DC;
+        width: 100%;
+        height: 80px;
+        border-radius: 30px;
+        flex-direction: column;
+        border-bottom: 4px solid #004225;
+        & .logo, nav {
+            display: none;
+        }
+        & .mbl-logo {
+            display: flex;
+            & img {
+                height: 70px;
+            }
+        }
+    }
+    main {
+        width: 100%;
+        display: flex;
+        & .hero {
+            border: 1px solid #FFCF9D;
+            border-radius: 45px 0;
+            flex-direction: column;
+            justify-content: center;
+            & .image-hero a img:hover {
+                transform: rotate(360deg);
+            }
+            & .text-hero {
+                width: 100%;
+                .write-efect p {
+                    width: 400px;
+                }
+            }
+        }
+        #about .goal-aside {
+            flex-direction: column;
+            & .goal {
+                width: 100%;
+            }
+            & aside {
+                width: 90%;
+            }
+        }
+    }
+    .mbl-nav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+        width: 100%;
+        background-color: #004225;
+        position: fixed;
+        bottom: 0;
+        z-index: 9;
+        border-top: 4px solid #FFB000;
+        border-radius: 40px 40px 0 0;
+        box-shadow: 2px -2px 6px #FFB000;
+        & div a, img {
+            text-decoration: none;
+            display: block;
+            align-items: center;
+            margin: 0 auto;
+            text-align: center;
+            color: #F5F5DC;
+            font-size: x-small;
+            padding-bottom: 10px;
+        }
+        & div a:hover {
+            transform: scale(.9);
+            transition-duration: .3s;
+        }
+        .mbl-logo a img {
+            width: 100px;
+        }
+    }
+    #back-to-top {
+        bottom: 100px;
+        right: 20px;
+    }
+}
